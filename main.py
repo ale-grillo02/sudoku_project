@@ -11,19 +11,6 @@ Module Docstring.
 
 # Funciones Adicionales:
 
-def is_repeated(ls : list) -> bool:
-    """Devuelve si existen elementos repetidos en una lista plana."""
-    ls_prime = ls.copy()
-    for i in ls_prime:
-        # print("Eliminando " + str(i) + " de la lista, Comprobando repeticiones") # DEBUG:
-        ls_prime.remove(i)
-        # print(ls_prime)
-        if i in ls_prime:
-            # print("Existe una repeticion en el orden " + str(ls_prime.index(i))) # DEBUG:
-            return True
-    # print("No existen repeticiones") # DEBUG:
-    return False
-
 def make_reg(array : list, order : int) -> list:
     """
     Dado un sudoku y un orden entre [0, 8],devuelve en una lista plana la
@@ -52,6 +39,20 @@ def printsudoku(array : list) -> None: # DEBUG:
 
 def check_sudoku_sol(array : list) -> bool:
     """Dada una matriz sudoku resuelta, devuelve si esta es solucion de la misma."""
+
+    def is_repeated(ls : list) -> bool:
+        """Devuelve si existen elementos repetidos en una lista plana."""
+        ls_prime = ls.copy()
+        for i in ls_prime:
+            # print("Eliminando " + str(i) + " de la lista, Comprobando repeticiones") # DEBUG:
+            ls_prime.remove(i)
+            # print(ls_prime)
+            if i in ls_prime:
+                # print("Existe una repeticion en el orden " + str(ls_prime.index(i))) # DEBUG:
+                return True
+        # print("No existen repeticiones") # DEBUG:
+        return False
+
     # print("Comprobando si el sudoku es solucion correcta: \n") # DEBUG:
     # printsudoku(array) # DEBUG:
     for i in range(9):
@@ -72,9 +73,16 @@ def create_sudoku_candidates(array : list) -> list:
     los posibles valores que pueden colocarse en dicha casilla."""
     output = array.copy()
 
-    def missing(list : list) -> list:
+    def missing(list : list, row, col) -> list:
+        """Dada una lista, devuelve los elementos no existentes en esta"""
+        for i in list:
+            if
+            for k in range(1,10)
+        return output
+
+    def intersect(many_lists : list) -> list:
+        """Dada una lista de listas, devuelve la interseccion de dichas listas"""
         pass
-    return output
 
 def find_unico_oculto():
     """Docstring."""

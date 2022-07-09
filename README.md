@@ -1,7 +1,8 @@
 # ***Sudoku_project***
 
-###### Autor: Carlos A. Grillo
+###### Autor: Carlos A. Grillo @ale-grillo02
 ###### Grupo: M112
+###### Github Repo: https://github.com/ale-grillo02/sudoku_project
 
 ### Tareas del Proyecto:
 1. Escriba una función de nombre ```check_sudoku_sol``` que dada una lista de un Sudoku
@@ -24,3 +25,6 @@ en los incisos anteriores.
 ## Requisitos
 - Python >= 3.5.X
 >This code was tested on Python 3.10.4 (linux version)
+
+## To do:
+- [x] Nothing
