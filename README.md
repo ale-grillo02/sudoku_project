@@ -19,8 +19,7 @@ contiene una entrada de la forma [u, (x, y)] donde u es el único oculto y (x,y)
 coordenadas de su posición. Si no existen únicos ocultos se retorna la lista vacía.
 
 4. Intente programar un algoritmo de solución de un Sudoku empleando las funciones
-en los incisos anteriores. Para más información sobre técnicas de solución de Sudokus
-consulte [1] y los otros materiales que se adjuntan.
+en los incisos anteriores.
 
 ## Requisitos
 - Python >= 3.5.X
